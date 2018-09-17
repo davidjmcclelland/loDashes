@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>lodash console</title>
+</head>
+<body>
+
+<pre>
+    const createRow = () => _.times(9, _.constant(null));  //undefined
+
+    const createTable = () => _.times(9, createRow ); //undefined
+
+    createRow();  //(9) [null, null, null, null, null, null, null, null, null]
+
+    console.table(createTable() );
+
+</pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+</body>
+</html>
